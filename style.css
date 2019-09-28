@@ -466,7 +466,11 @@ footer a:visited {
 
 @media (max-width: 576px) {
   .myNavLogo {
-    width: 10em;
+    width: 8em;
+  }
+
+  nav .navbar-nav li a {
+    font-size: 15px;
   }
 
   .myHero {
@@ -479,18 +483,18 @@ footer a:visited {
   .myHeroImage {
     width: 257px;
     margin: 0 auto; /*center section*/
-    padding-top: 8em;
+    padding-top: 4em;
   }
 
   .myHeroDown {
     width: 25px;
     margin: 0 auto; /*center section*/
-    padding-top: 7em;
+    padding-top: 4em;
   }
 
   .myHeroText {
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 650;
     letter-spacing: 0.77px;
     padding-top: 1em;
@@ -524,7 +528,7 @@ footer a:visited {
     margin: 0 auto; /*center section*/
     padding-top: 7em;
     text-align: center; /* this aligns all images and text in div */
-    padding-bottom: 9em;
+    padding-bottom: 7em;
   }
 
   .myInfoImg {
@@ -546,7 +550,7 @@ footer a:visited {
   .myEmailList {
     width: 90%; /* with margin below */
     margin: 0 auto; /*center section*/
-    padding-top: 7em;
+    padding-top: 3em;
     text-align: center; /* this aligns all images and text in div */
     padding-bottom: 0em;
   }
