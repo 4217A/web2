@@ -1,187 +1,591 @@
 html,
 body {
+  color: #707070;
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* so text stays in browser */
-  font-family: "Roboto", sans-serif;
-  color: #222;
+  margin: 0;
 }
 
-.offset-top {
-  padding-top: 3.7em;
-}
-
-.clickwrap {
-  cursor: pointer;
-}
-
-.padding {
-  padding-bottom: 2rem;
-}
-
-/* ******* ******* ******* */
-/* ******* navbar ******* */
 .navbar {
-  padding-left: 0.47rem;
-  text-transform: uppercase;
-  letter-spacing: 0.07rem;
-  background-color: rgba(255, 255, 255, 0.97) !important;
+  background-color: #fcc01b !important;
 }
 
-.navbar-nav li {
-  padding-left: 0.7rem;
+nav .navbar-nav li a {
+  color: white !important;
 }
 
-.nav-link {
-  font-size: 17px !important;
+/* remove border */
+.navbar-light .navbar-toggler {
+  border: 0;
 }
 
-/* ******* ******* ******* */
-/* ******* Home ******* */
-.carousel-inner img {
-  height: 100%;
-  width: 100%;
+/* remove border when clicked */
+button.navbar-toggler:focus {
+  outline: 1px none;
 }
 
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-40%);
-}
-
-.carousel-caption h1 {
-  /* pos */
-  width: 70%; /* with margin below */
+.myHero {
+  width: 90%; /* with margin below */
   margin: 0 auto; /*center section*/
-  padding-bottom: 0.47rem;
-  /* font */
-  font-size: 70px;
-  font-weight: 700;
-  text-shadow: 2px 2px 7px #444;
-  /* border */
-  border: 2.7px solid white;
-  box-shadow: 2px 2px 7px #444;
+  padding-top: 4em;
+  text-align: center; /* this aligns all images and text in div */
+  padding-bottom: 8em;
 }
 
-.carousel-caption h3 {
-  /* pos */
-  padding-top: 0.27rem;
-  padding-bottom: 0.27rem;
-  /* font */
-  font-size: 30px;
-  font-weight: 500;
-  text-shadow: 2px 2px 9px #333;
+.myInfoContainer {
+  background-color: #f7bd1b;
 }
 
-.btn-light {
-  /* border */
-  box-shadow: 2px 2px 7px #444;
+.myInfoTopImg {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: 1em;
 }
 
-.btn-light:hover {
-  /* color */
-  border-color: #ffae00;
-  background-color: #ffae00;
+.myInfo {
+  width: 90%; /* with margin below */
+  margin: 0 auto; /*center section*/
+  padding-top: 4em;
+  text-align: center; /* this aligns all images and text in div */
+}
+
+footer a {
   color: white;
 }
 
-/* ******* ******* ******* */
-/* ******* Locations ******* */
-.jumbotron {
-  padding-top: 4.7rem;
-  padding-bottom: 4.7rem;
-}
-
-.jumbotron hr {
-  width: 20%;
-}
-
-/* ******* ******* ******* */
-/* ******* Ingredients ******* */
-.ingredients {
-  /* pos */
-  width: 70%; /* with margin below */
-  margin: 0 auto; /*center section*/
-}
-
-.ingredients p {
-  /* pos */
-  padding-bottom: 3.7rem;
-}
-
-.d-flex {
-  margin-bottom: 1rem;
-}
-
-.card {
-  width: 100%;
-}
-
-/* ******* ******* ******* */
-/* ******* Locations ******* */
-footer {
-  background-color: #3f3f3f;
-  color: #dad9d7;
-  padding-top: 2rem;
-}
-
-footer hr {
-  border-top: 1px solid white;
-  width: 75%;
+footer a:visited {
+  color: white;
 }
 
 /*--- Media Queries --*/
 /*--- mobile first! --*/
 @media (min-width: 993px) {
+  .myNavLogo {
+    width: 12em;
+  }
+
+  nav .navbar-nav li a {
+    font-size: 17px;
+  }
+
+  .myHero {
+    width: 95%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 2em;
+    text-align: center; /* this aligns all images and text in div */
+  }
+
+  .myHeroImage {
+    width: 477px;
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+  }
+
+  .myHeroDown {
+    width: 47px;
+    padding-left: 20px;
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+  }
+
+  .myHeroText {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    padding-top: 1em;
+  }
+
+  .myHeroSubText {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.77px;
+    padding-top: 0.77em;
+  }
+
+  .myInfoTopImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1em;
+  }
+
+  .myInfoBotImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -1em;
+    transform: rotate(180deg);
+  }
+
+  .myInfo {
+    width: 80%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 15em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 7em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 6em;
+  }
+
+  .myInfoImg {
+    width: 177px;
+    padding-bottom: 2em;
+  }
+
+  .Cup {
+    width: 247px;
+    padding-left: 40px;
+  }
+
+  .Heart {
+    padding-top: 30px;
+  }
+
+  .Earth {
+    padding-top: 25px;
+  }
+
+  .myInfo p {
+    color: white;
+    padding-bottom: 5em;
+    font-size: 27px;
+  }
+
+  .myEmailList {
+    width: 70%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 0em;
+  }
+
+  .myEmailList h1 {
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    line-height: 50px;
+    padding-top: 1em;
+    position: relative;
+    top: 1.5em;
+  }
+
+  .myEmailListContainer img {
+    width: 100%;
+  }
+
+  .myEmailList button {
+    margin-top: 1em;
+    position: relative;
+    top: 1.5em;
+    z-index: 1;
+    font-size: 26px;
+    padding-bottom: 0.4em;
+  }
+
+  footer {
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 4em;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 17px;
+  }
+
+  footer hr {
+    border-color: white;
+    width: 70%;
+  }
 }
 
 @media (max-width: 992px) {
-  .nav-link {
-    font-size: 14px !important;
+  .myNavLogo {
+    width: 17em;
   }
 
-  .carousel-caption h1 {
-    /* font */
-    font-size: 50px;
-    font-weight: 500;
+  nav .navbar-nav li a {
+    font-size: 27px;
   }
 
-  .offset-top {
-    padding-top: 3.5em;
+  .myHero {
+    width: 95%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+    text-align: center; /* this aligns all images and text in div */
+  }
+
+  .myHeroImage {
+    width: 477px;
+    margin: 0 auto; /*center section*/
+    padding-top: 14em;
+  }
+
+  .myHeroDown {
+    width: 47px;
+    margin: 0 auto; /*center section*/
+    padding-top: 11em;
+  }
+
+  .myHeroText {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    padding-top: 1.2em;
+  }
+
+  .myHeroSubText {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.77px;
+    padding-top: 0.97em;
+  }
+
+  .myInfoTopImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1em;
+  }
+
+  .myInfoBotImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -1em;
+    transform: rotate(180deg);
+  }
+
+  .myInfo {
+    width: 80%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 15em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 9em;
+  }
+
+  .myInfoImg {
+    width: 177px;
+    padding-bottom: 2em;
+  }
+
+  .Cup {
+    width: 247px;
+    padding-left: 40px;
+  }
+
+  .myInfo p {
+    color: white;
+    padding-bottom: 5em;
+    font-size: 37px;
+  }
+
+  .myEmailList {
+    width: 80%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 12em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 0em;
+  }
+
+  .myEmailList h1 {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    line-height: 70px;
+    padding-top: 1em;
+  }
+
+  .myEmailListContainer img {
+    width: 100%;
+    position: relative;
+    top: -7em;
+  }
+
+  .myEmailList button {
+    margin-top: 1em;
+    position: relative;
+    z-index: 1;
+    font-size: 37px;
+    padding-bottom: 0.4em;
+  }
+
+  footer {
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 4em;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 24px;
+  }
+
+  footer hr {
+    border-color: white;
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-link {
-    font-size: 12px !important;
+  .myNavLogo {
+    width: 12em;
   }
 
-  .carousel-caption h1 {
-    /* font */
-    font-size: 40px;
-    font-weight: 500;
+  nav .navbar-nav li a {
+    font-size: 22px;
   }
 
-  .offset-top {
-    padding-top: 3.5em;
+  .myHero {
+    width: 95%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+    text-align: center; /* this aligns all images and text in div */
+  }
+
+  .myHeroImage {
+    width: 377px;
+    margin: 0 auto; /*center section*/
+    padding-top: 8em;
+  }
+
+  .myHeroDown {
+    width: 37px;
+    margin: 0 auto; /*center section*/
+    padding-top: 11em;
+  }
+
+  .myHeroText {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    padding-top: 1.2em;
+  }
+
+  .myHeroSubText {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1.77px;
+    padding-top: 0.77em;
+  }
+
+  .myInfoTopImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1em;
+  }
+
+  .myInfoBotImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -1em;
+    transform: rotate(180deg);
+  }
+
+  .myInfo {
+    width: 70%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 12em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 9em;
+  }
+
+  .myInfoImg {
+    width: 177px;
+    padding-bottom: 2em;
+  }
+
+  .Cup {
+    width: 247px;
+    padding-left: 40px;
+  }
+
+  .myInfo p {
+    color: white;
+    padding-bottom: 4em;
+    font-size: 35px;
+  }
+
+  .myEmailList {
+    width: 80%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 12em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 0em;
+  }
+
+  .myEmailList h1 {
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 650;
+    letter-spacing: 1.77px;
+    line-height: 50px;
+    padding-top: 1em;
+  }
+
+  .myEmailListContainer img {
+    width: 100%;
+    position: relative;
+    top: -7em;
+  }
+
+  .myEmailList button {
+    margin-top: 1em;
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    padding-bottom: 0.5em;
+  }
+
+  footer {
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 4em;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 17px;
+  }
+
+  footer hr {
+    border-color: white;
+    width: 70%;
   }
 }
 
 @media (max-width: 576px) {
-  .carousel-caption {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-40%);
+  .myNavLogo {
+    width: 10em;
   }
 
-  .carousel-caption h1 {
-    /* pos */
-    width: 100%; /* with margin below */
+  .myHero {
+    width: 95%; /* with margin below */
     margin: 0 auto; /*center section*/
-    padding-bottom: 0.27rem;
-    /* font */
-    font-size: 35px;
-    font-weight: 500;
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+  }
+
+  .myHeroImage {
+    width: 257px;
+    margin: 0 auto; /*center section*/
+    padding-top: 8em;
+  }
+
+  .myHeroDown {
+    width: 25px;
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+  }
+
+  .myHeroText {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: 0.77px;
+    padding-top: 1em;
+  }
+
+  .myHeroSubText {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 650;
+    letter-spacing: 1.27px;
+    padding-top: 0.77em;
+  }
+
+  .myInfoTopImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 1em;
+  }
+
+  .myInfoBotImg {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -1em;
+    transform: rotate(180deg);
+  }
+
+  .myInfo {
+    width: 90%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 9em;
+  }
+
+  .myInfoImg {
+    width: 107px;
+    padding-bottom: 1em;
+  }
+
+  .Cup {
+    width: 147px;
+    padding-left: 20px;
+  }
+
+  .myInfo p {
+    color: white;
+    padding-bottom: 4em;
+    font-size: 20px;
+  }
+
+  .myEmailList {
+    width: 90%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-top: 7em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 0em;
+  }
+
+  .myEmailList h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: 0.77px;
+    line-height: 40px;
+    padding-top: 1em;
+  }
+
+  .myEmailListContainer img {
+    width: 100%;
+    position: relative;
+    top: -4em;
+  }
+
+  .myEmailList button {
+    margin-top: 1em;
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    padding-bottom: 0.25em;
+  }
+
+  footer {
+    margin: 0 auto; /*center section*/
+    padding-top: 4em;
+    text-align: center; /* this aligns all images and text in div */
+    padding-bottom: 4em;
+    background-color: #3d3d3d;
+    color: white;
+  }
+
+  footer hr {
+    border-color: white;
+    width: 70%;
   }
 }
 
