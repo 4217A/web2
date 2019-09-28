@@ -1,0 +1,205 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* so text stays in browser */
+  font-family: "Roboto", sans-serif;
+  color: #222;
+}
+
+.offset-top {
+  padding-top: 3.7em;
+}
+
+.clickwrap {
+  cursor: pointer;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+/* ******* ******* ******* */
+/* ******* navbar ******* */
+.navbar {
+  padding-left: 0.47rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  background-color: rgba(255, 255, 255, 0.97) !important;
+}
+
+.navbar-nav li {
+  padding-left: 0.7rem;
+}
+
+.nav-link {
+  font-size: 17px !important;
+}
+
+/* ******* ******* ******* */
+/* ******* Home ******* */
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.carousel-caption h1 {
+  /* pos */
+  width: 70%; /* with margin below */
+  margin: 0 auto; /*center section*/
+  padding-bottom: 0.47rem;
+  /* font */
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 2px 2px 7px #444;
+  /* border */
+  border: 2.7px solid white;
+  box-shadow: 2px 2px 7px #444;
+}
+
+.carousel-caption h3 {
+  /* pos */
+  padding-top: 0.27rem;
+  padding-bottom: 0.27rem;
+  /* font */
+  font-size: 30px;
+  font-weight: 500;
+  text-shadow: 2px 2px 9px #333;
+}
+
+.btn-light {
+  /* border */
+  box-shadow: 2px 2px 7px #444;
+}
+
+.btn-light:hover {
+  /* color */
+  border-color: #ffae00;
+  background-color: #ffae00;
+  color: white;
+}
+
+/* ******* ******* ******* */
+/* ******* Locations ******* */
+.jumbotron {
+  padding-top: 4.7rem;
+  padding-bottom: 4.7rem;
+}
+
+.jumbotron hr {
+  width: 20%;
+}
+
+/* ******* ******* ******* */
+/* ******* Ingredients ******* */
+.ingredients {
+  /* pos */
+  width: 70%; /* with margin below */
+  margin: 0 auto; /*center section*/
+}
+
+.ingredients p {
+  /* pos */
+  padding-bottom: 3.7rem;
+}
+
+.d-flex {
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 100%;
+}
+
+/* ******* ******* ******* */
+/* ******* Locations ******* */
+footer {
+  background-color: #3f3f3f;
+  color: #dad9d7;
+  padding-top: 2rem;
+}
+
+footer hr {
+  border-top: 1px solid white;
+  width: 75%;
+}
+
+/*--- Media Queries --*/
+/*--- mobile first! --*/
+@media (min-width: 993px) {
+}
+
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 14px !important;
+  }
+
+  .carousel-caption h1 {
+    /* font */
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .offset-top {
+    padding-top: 3.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 12px !important;
+  }
+
+  .carousel-caption h1 {
+    /* font */
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .offset-top {
+    padding-top: 3.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-40%);
+  }
+
+  .carousel-caption h1 {
+    /* pos */
+    width: 100%; /* with margin below */
+    margin: 0 auto; /*center section*/
+    padding-bottom: 0.27rem;
+    /* font */
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
+
+/* Below are the built in Bootstrap breakpoints for screen sizes (responsive layout) */
+/* Example md will change the layout at 768px */
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/

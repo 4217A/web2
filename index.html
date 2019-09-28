@@ -1,0 +1,275 @@
+<!-- 09/21/2019 -->
+
+<!-- Colors: -->
+<!-- Orange #ffae00 -->
+<!-- Red-Orange #x -->
+<!-- Off White #x -->
+
+<!-- Accent Colors: -->
+<!-- Blue-Green #x -->
+
+<!-- Libraries Used: -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Morning Delight</title>
+	<!-- Font from Google -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+	</style>
+	<!-- Bootstrap from https://getbootstrap.com/ -->	
+	<link 
+	rel="stylesheet" 
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous" />
+	<script 
+	src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+	crossorigin="anonymous">
+	</script>
+	<script 
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+	crossorigin="anonymous">
+	</script>
+	<script 
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+	crossorigin="anonymous">
+	</script>
+
+	<!-- Local CSS -->	
+	<link href="style.css" rel="stylesheet" />
+
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <!-- container-fluid so it takes up 100% of screen -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<div class="container-fluid">
+			  <!-- #navbarResponsive will be where the navbar links to -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				  <!-- span for navbar icon -->
+				  <span class="navbar-toggler-icon"></span>
+			  </button>
+  
+			  <!-- #navbarResponsive dropdown when icon clicked -->
+			  <div class="collapse navbar-collapse" id="navbarResponsive">
+				  <!-- ml-auto so navbar will expand automatically on right -->
+				  <ul class="navbar-nav ml-auto">
+					  <li class="nav-item">
+						  <a href="#Home" class="nav-link">Home</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="img/Menu.pdf" target="_blank" class="nav-link">Menu</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="#Locations" class="nav-link">Locations</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="#Ingredients" class="nav-link">Ingredients</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="#Order" class="nav-link">Order</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="#Contact" class="nav-link">Contact</a>
+					  </li>
+					  <li class="nav-item">
+						  <a href="#Careers" class="nav-link">Careers</a>
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </nav>
+
+
+	<!--- |||||||||||| -->
+	<!--- Home -->
+	<!--- |||||||||||| -->
+	<div id="Home" class="carousel offset-top">
+		<!-- carousel images-->
+		<div class="carousel-inner">
+			<div class="clickwrap" onclick='window.open("https://unsplash.com/photos/zcUgjyqEwe8");') >
+				<div class="carousel-item active">
+					<picture>
+					<source media="(min-width: 576px)" srcset="img/joseph-gonzalez-zcUgjyqEwe8-unsplash-1200x600.png" />
+					<source media="(min-width: 0px)" srcset="img/joseph-gonzalez-zcUgjyqEwe8-unsplash-1000x2000.png" />
+					<img src="img/joseph-gonzalez-zcUgjyqEwe8-unsplash-1200x600.png" alt="Home" />
+					</picture>
+				</div>
+				<div class="carousel-caption">
+					<h1 class="display-1">Morning Delight</h1>
+					<h3>Breakfast & Brunch</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- |||||||||||| -->
+	<!--- Menu -->
+	<!--- |||||||||||| -->
+
+	<!--- |||||||||||| -->
+	<!--- Locations -->
+	<!--- |||||||||||| -->
+	<div id="Locations" class="jumbotron offset-top">
+		<div class="lead text-center">
+			1200 Baker Dr., Houston Tx, 77577
+			</br>
+			<hr/>
+			345 Benedict Ln., Katy Tx, 77051
+			</br>
+			<hr/>
+			7722 Savory St., Pearland Tx, 77034
+		</div>
+	</div>
+
+	<!--- |||||||||||| -->
+	<!--- Ingedients & Dishes -->
+	<!--- |||||||||||| -->
+	<div id="Ingredients" class="ingredients offset-top">
+		<div class="lead text-center">
+			<p>
+				We source the best ingredients to create dishes full of flavor and nutrition.  
+				Below are some of our favorites.
+			</p>
+		</div>
+	</div>
+	
+	<!-- this is so that cards are all the same height -->
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-4 d-flex">
+					<div class="card">  
+					<a href="https://unsplash.com/photos/jsgJtBOR6jY" target="_blank">
+						<img class="card-img-top" src="img/monika-grabkowska-jsgJtBOR6jY-unsplash 400 x 300.jpg" alt="Magical Crepes">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Magical Crepes</h3>
+						<p>Delicious crepes with a magical filling with fresh fruit.</p>
+						<a href="img/Menu.pdf" target="_blank" class="btn btn-light mt-auto">See Menu</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 d-flex">
+				<div class="card">  
+					<a href="https://unsplash.com/photos/FFqNATH27EM" target="_blank">
+						<img class="card-img-top" src="img/ben-kolde-FFqNATH27EM-unsplash 400 x 300.jpg" alt="Sunny Egg Toast">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>Sunny Egg Toast</h3>
+						<p>A happy slice of toast to have avocado and egg as company. We are sure you will be happy too!</p>
+						<a href="img/Menu.pdf" target="_blank" class="btn btn-light mt-auto">See Menu</a>
+					</div>
+				</div>
+			</div>
+	
+			<div class="col-md-4 d-flex">
+				<div class="card">  
+					<a href="https://unsplash.com/photos/LdfLThHJB7c" target="_blank">
+						<img class="card-img-top" src="img/carissa-gan-LdfLThHJB7c-unsplash 400 x 300.jpg" alt="Straw Kiwi Pancake">
+					</a>
+					<div class="card card-body flex-fill">
+						<h3>A Berry Kiwi Pancake</h3>
+						<p>Strawberries, Blueberries and kiwi over pancakes with a sweet sugar maple dressing. It's like a salad, but better.</p>
+						<a href="img/Menu.pdf" target="_blank" class="btn btn-light mt-auto">See Menu</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<!--- |||||||||||| -->
+	<!--- Order for Pickup or Delivery -->
+	<!--- |||||||||||| -->
+	<div id="Order" class="jumbotron offset-top">
+		<div class="lead text-center">
+			<span>
+				<h3>Order for Pick-Up or Delivery</h3>
+				<hr/>
+			</span>
+			<span>
+				We will be introducing a system to order food online.  
+				</br>
+				For now please give us a call to place your order and we will deliver or have your order ready for pick-up.
+				</br>
+				<hr/>
+				Thank you and have a great day!
+			</span>
+		</div>
+	</div>
+
+
+	<!--- |||||||||||| -->
+	<!--- Contact Us -->
+	<!--- |||||||||||| -->
+	<div id="Contact" class="ingredients offset-top">
+		<div class="lead text-center">
+			<p>
+				<h3>Contact Us!</h3>
+				<hr/>
+				Phone: 713-555-7272
+				<hr/>
+				Email: hello@morningdelight  
+				</br>
+				</br>
+				</br>
+				</br>
+		</p>
+		</div>
+	</div>
+
+
+	<!--- |||||||||||| -->
+	<!--- Careers -->
+	<!--- |||||||||||| -->
+	<div id="Careers" class="jumbotron offset-top">
+		<div class="lead text-center">
+			<span>
+				<h3>Careers</h3>
+				<hr/>
+			</span>
+			<span>
+				Please check back for future job postings.  
+				</br>
+				We believe people come first.
+				</br>
+				Employees and Customers are our priority.
+				<hr/>
+			</span>
+		</div>
+	</div>
+
+
+	<!--- |||||||||||| -->
+    <!--- Footer -->
+	<!--- |||||||||||| -->
+	<footer>
+	<div class="container-fluid">
+		<div class="row text-center">
+
+			<div class="col-12">
+				<hr/>
+				Thank you for Visiting
+				</br>
+				4217a
+				<hr/>
+			</div>
+
+		</div>
+	</div>
+	</footer>
+
+
+</body>
+</html>
