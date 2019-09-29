@@ -337,7 +337,6 @@ footer a:visited {
 @media (max-width: 768px) {
   .myNavLogo {
     width: 12em;
-    padding-right: 1em;
   }
 
   nav .navbar-nav li a {
@@ -468,6 +467,8 @@ footer a:visited {
 @media (max-width: 576px) {
   .myNavLogo {
     width: 8em;
+    padding-right: 7em;
+    margin-right: 7em;
   }
 
   nav .navbar-nav li a {
